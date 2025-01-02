@@ -1,0 +1,88 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  padding: 0 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* General Container for the page */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Button and input styling */
+button, input {
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #007BFF;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Flexbox Layout */
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+
+  .flex {
+      flex-direction: column;
+      align-items: center;
+  }
+}

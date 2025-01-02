@@ -1,0 +1,68 @@
+/* src/pages/FollowersPage.css */
+
+/* Dark background for the entire page */
+.followers-page {
+    background-color: #121212;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Container for the follower cards */
+.followers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style for each follower card */
+.follower-card {
+    background-color: #1e1e1e; /* Dark background for the card */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    width: 220px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.follower-card:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    background-color: #333;
+}
+
+/* Profile image */
+.follower-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Follower's username */
+.follower-card p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .followers-list {
+        flex-direction: column;
+    }
+
+    .follower-card {
+        width: 100%;
+    }
+}

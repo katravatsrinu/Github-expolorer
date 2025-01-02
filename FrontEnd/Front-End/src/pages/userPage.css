@@ -1,0 +1,141 @@
+/* src/pages/UserPage.css */
+
+body {
+    background-color: #121212; /* Dark background for the entire page */
+    color: #e0e0e0; /* Light text color for better contrast */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Main container for the user page */
+.user-page {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #1e1e1e; /* Slightly lighter dark background for the user container */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Profile image */
+.user-info img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 4px solid #007BFF; /* Border around the image for contrast */
+    margin-bottom: 20px;
+}
+
+/* User name and location styling */
+.user-info h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.user-info p {
+    font-size: 18px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+/* Buttons container */
+.user-info div {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.user-info button {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #007BFF; /* Primary blue button */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 200px; /* Fixed width for buttons */
+}
+
+.user-info button:disabled {
+    background-color: #555; /* Disabled state with dark gray */
+    cursor: not-allowed;
+}
+
+.user-info button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Back button styling */
+.back-button {
+    background-color: #333; /* Dark background for the back button */
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    width: 200px; /* Fixed width for consistency */
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .user-page {
+        padding: 15px;
+    }
+
+    .user-info img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .user-info h2 {
+        font-size: 24px;
+    }
+
+    .user-info p {
+        font-size: 16px;
+    }
+
+    .user-info button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .back-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .user-info h2 {
+        font-size: 22px;
+    }
+
+    .user-info p {
+        font-size: 14px;
+    }
+
+    .user-info button {
+        font-size: 14px;
+    }
+
+    .back-button {
+        font-size: 16px;
+    }
+}

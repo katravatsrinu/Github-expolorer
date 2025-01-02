@@ -1,0 +1,97 @@
+/* src/pages/HomePage.css */
+.home-page {
+    text-align: center;
+    background-color: #1e1e1e; /* Dark background */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.page-title {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.search-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.search-container input {
+    padding: 12px;
+    font-size: 18px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.search-container button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Hover effect for the button */
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .home-page {
+        padding: 10px;
+    }
+
+    .search-container input {
+        width: 90%;
+    }
+
+    .search-container button {
+        width: 90%;
+    }
+
+    .page-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-container input {
+        width: 85%;
+    }
+
+    .search-container button {
+        width: 85%;
+    }
+
+    .page-title {
+        font-size: 20px;
+    }
+}

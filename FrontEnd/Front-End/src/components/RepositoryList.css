@@ -1,0 +1,39 @@
+/* src/components/RepositoryList.css */
+
+.repo-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.repo-list h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.repo-list ul {
+    list-style-type: none;
+}
+
+.repo-list li {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.repo-list li a {
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.repo-list li a:hover {
+    color: #0056b3;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .repo-list {
+        width: 100%;
+    }
+}

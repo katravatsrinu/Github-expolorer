@@ -1,0 +1,43 @@
+/* src/components/UserInfo.css */
+
+.user-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.user-info h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.user-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.user-info a {
+    color: #007bff;
+    font-size: 1rem;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.user-info a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .user-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .user-info p {
+        font-size: 0.9rem;
+    }
+}
