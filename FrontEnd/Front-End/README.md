@@ -19,27 +19,7 @@ Node.js
 Express.js
 MySQL (for storing user data)
 Axios (for fetching data from GitHub API)
-Getting Started
-Prerequisites
-Node.js (version 14 or higher)
-MySQL
-Git
-Installation
-Clone the repository:
-bash
-Copy code
-git clone https://github.com/yourusername/github-user-management.git
-cd github-user-management
-Install dependencies for the frontend:
-bash
-Copy code
-cd frontend
-npm install
-Install dependencies for the backend:
-bash
-Copy code
-cd backend
-npm install
+
 Set up the MySQL database:
 Create a new database in MySQL.
 Import the necessary SQL schema for the users table.
